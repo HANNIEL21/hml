@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E7E8EB;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1111;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+
+ul {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul a {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul a li {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    color: #964b00;
+    transition: .3s ease-in-out;
+}
+
+ul a li:hover {
+    color: #ffffff;
+    font-size: 20px;
+    transform: translate(-10%, -30%);
+    transition: .3s ease-in-out;
+}
+
+.logo.img {
+    width: 70px;
+    margin: 0;
+}
+
+.cta button {
+    background-color: #964b00;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+
+.cta button:hover {
+    background-color: #964b00;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+}
+
+/* Header End */
+
+/* Main */
+
+.hero-section {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+h1 {
+    color: #964b00;
+}
+
+h2,
+h3 {
+    text-transform: capitalize;
+    text-align: center;
+    color: #964b00;
+    font-weight: bold;
+}
+
+h2 span {
+    text-transform: uppercase;
+}
+
+
+.image{
+    border-radius: 20%;
+}
+
+/* services */
+.services {
+    background-color: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* team */
+.team {
+    background-color: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cad{
+    width: 300px;
+    position: relative;
+}
+
+.cad-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    transition: .9s ease-in-out;
+}
+
+.cad-overlay>p{
+    font-size: 18px;
+    line-height: normal;
+}
+
+.cad:hover .cad-overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .9s ease-in-out;
+}
+
+.rounded-5{
+    border: 50%;
+}
+
+.card_img {
+    width: 200px;
+    height:200px;
+    background-color: #E7E8EB;
+    border-radius: 50%;
+    
+}
+
+.submit-btn{
+    background-color: #964b00;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
