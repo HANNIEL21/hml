@@ -81,7 +81,7 @@
                 <div class=" col-md col-lg-6 order-lg-2">
                     <img src="./images/group.jpg" class="image-fluid w-100 image shadow-sm" alt="">
                 </div>
-                
+
             </div>
         </section>
 
@@ -456,17 +456,21 @@
                 </div>
 
                 <div class="col-md-5 bg-white p-4 " style="border-radius: 40px;">
-                    <form class="container">
-                        <div class="row g-4">
-                            <input type="text" class="form-control fw-bold" placeholder="Your Full Name">
-                            <input type="email" class="form-control fw-bold" placeholder="Your Email">
-                            <textarea id="" class="form-control fw-bold"
+                    <div class="container">
+                        <form class="row justify-content-between g-4" id="contact-form">
+                            <input type="text" class="form-control fw-bold" placeholder="Your Full Name"
+                                name="user_name" id="user_name">
+                            <input type="email" class="form-control fw-bold" placeholder="Your Email" name="user_email"
+                                id="user_email">
+                            <input type="tel" class="form-control fw-bold" placeholder="Your Number"
+                                name="contact_number" id="contact_number" minlength="11">
+                            <textarea name="message" id="message" class="form-control fw-bold"
                                 placeholder="Tell Us About Your Project"></textarea>
 
                             <button type="submit" class="submit-btn shadow" data-aos="fade-up" data-aos-easing="linear"
                                 data-aos-duration="1500">Send Message</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
 
                 <h3 class="col-12">
@@ -497,8 +501,30 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         AOS.init();
+        (function () {
+            emailjs.init('oO6xQkaSaWFWNFW3U');
+        })();
+    </script>
+    <script src="./js/index.js"></script>
+    <script>
+        // window.onload = function () {
+        //     document.getElementById('contact-form').addEventListener('submit', function (event) {
+        //         event.preventDefault();
+        //         // generate a five digit number for the contact_number variable
+        //         // this.contact_number.value = Math.random() * 100000 | 0;
+        //         // these IDs from the previous steps
+        //         emailjs.sendForm('contact_service', 'contact_form', this)
+        //             .then(function () {
+        //                 console.log('SUCCESS!');
+        //             }, function (error) {
+        //                 console.log('FAILED...', error);
+        //             });
+        //     });
+        // }
     </script>
 </body>
 
